@@ -1,9 +1,11 @@
 require('dotenv').config();
 const express=require("express");
-
+const job =require("./cron/cron.js")
 const app=express();
 const path=require('path')
 const cors = require('cors');
+
+job.start();
 // Cors 
 const corsOptions = {
   origin: process.env.ALLOWED_CLIENTS.split(',')
