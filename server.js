@@ -5,7 +5,7 @@ const app=express();
 const path=require('path')
 const cors = require('cors');
 
-job.start();
+// job.start();
 // Cors 
 const corsOptions = {
   origin: process.env.ALLOWED_CLIENTS.split(',')
